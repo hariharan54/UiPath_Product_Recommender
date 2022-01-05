@@ -2,6 +2,16 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.6.1": {
+      "BalaReva.EasyDataTable.Activities/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/_._": {}
+        },
+        "runtime": {
+          "lib/BalaReva.EasyDataTable.Design.dll": {},
+          "lib/BalaReva.EasyDataTable.dll": {}
+        }
+      },
       "ClosedXML/0.87.1": {
         "type": "package",
         "dependencies": {
@@ -2032,6 +2042,16 @@
       }
     },
     ".NETFramework,Version=v4.6.1/win10-x64": {
+      "BalaReva.EasyDataTable.Activities/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/_._": {}
+        },
+        "runtime": {
+          "lib/BalaReva.EasyDataTable.Design.dll": {},
+          "lib/BalaReva.EasyDataTable.dll": {}
+        }
+      },
       "ClosedXML/0.87.1": {
         "type": "package",
         "dependencies": {
@@ -4048,6 +4068,19 @@
     }
   },
   "libraries": {
+    "BalaReva.EasyDataTable.Activities/3.0.1": {
+      "sha512": "Ab4NdOBwLGZ9qdlPR62cPANV2QD2odf2fQ+F6CH3z+JhFjYk44Jj4xj1TYLJUhEpmMUvKq4lr6Y7LS0/vvgsig==",
+      "type": "package",
+      "path": "balareva.easydatatable.activities/3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "balareva.easydatatable.activities.3.0.1.nupkg.sha512",
+        "balareva.easydatatable.activities.nuspec",
+        "lib/BalaReva.EasyDataTable.Design.dll",
+        "lib/BalaReva.EasyDataTable.dll"
+      ]
+    },
     "ClosedXML/0.87.1": {
       "sha512": "2LC0T8bu2G2kt34C4Ig87uZfrRO4MwMVI54e2To7m3DvwAs2Z2Ir86WQuUoW8Txo1uNGSfmu3DpfpQhSX0bIww==",
       "type": "package",
@@ -7557,6 +7590,7 @@
   "projectFileDependencyGroups": {
     "": [],
     ".NETFramework,Version=v4.6.1": [
+      "BalaReva.EasyDataTable.Activities >= 3.0.1 <= 3.0.1",
       "UiPath.Excel.Activities >= 2.11.4 <= 2.11.4",
       "UiPath.Mail.Activities >= 1.12.3 <= 1.12.3",
       "UiPath.System.Activities >= 21.10.3 <= 21.10.3",
@@ -7577,6 +7611,11 @@
     "frameworks": {
       "net461": {
         "dependencies": {
+          "BalaReva.EasyDataTable.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[3.0.1, 3.0.1]"
+          },
           "UiPath.Excel.Activities": {
             "include": "Runtime",
             "target": "Package",
