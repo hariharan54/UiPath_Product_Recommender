@@ -1,13 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="FK_one_per_row" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <x:Members>
-    <x:Property Name="product_name" Type="InOutArgument(x:String)" />
-    <x:Property Name="ExtractDataTable" Type="InOutArgument(sd:DataTable)" />
-  </x:Members>
-  <mva:VisualBasic.Settings>
-    <x:Null />
-  </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>616,1374</sap:VirtualizedContainerService.HintSize>
-  <sap2010:WorkflowViewState.IdRef>FK_one_per_row_1</sap2010:WorkflowViewState.IdRef>
+<Activity mc:Ignorable="sap sap2010" x:Class="FK_one_per_row" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="628,1333" sap2010:WorkflowViewState.IdRef="FK_one_per_row_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
       <x:String>System.Activities</x:String>
@@ -74,6 +65,7 @@
       <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
       <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
@@ -82,12 +74,22 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="FK_one_per_row" sap:VirtualizedContainerService.HintSize="518,1309" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="FK_one_per_row" sap:VirtualizedContainerService.HintSize="518,1587" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="product_name" />
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="x:String" Name="output" />
+    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="476,238" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Product Name" Title="Product Recommendation">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[product_name]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
     <ui:OpenBrowser AutomaticallyDownloadWebDriver="{x:Null}" CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="476,167" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://flipkart.com">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
