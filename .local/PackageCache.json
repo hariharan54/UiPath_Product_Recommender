@@ -2,6 +2,17 @@
   "Packages": [
     {
       "Package": {
+        "Id": "BalaReva.EasyDataTable.Activities",
+        "Version": "3.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\rhari\\.nuget\\packages\\balareva.easydatatable.activities/3.0.1\\lib/BalaReva.EasyDataTable.Design.dll",
+        "C:\\Users\\rhari\\.nuget\\packages\\balareva.easydatatable.activities/3.0.1\\lib/BalaReva.EasyDataTable.dll"
+      ],
+      "Path": "C:\\Users\\rhari\\.nuget\\packages\\balareva.easydatatable.activities\\3.0.1"
+    },
+    {
+      "Package": {
         "Id": "UiPath.Excel.Activities",
         "Version": "2.11.4"
       },
@@ -181,18 +192,23 @@
     },
     {
       "Package": {
-        "Id": "BalaReva.EasyDataTable.Activities",
+        "Id": "BalaReva.DataTable.Activities",
         "Version": "3.0.1"
       },
       "Assemblies": [
-        "C:\\Users\\rhari\\.nuget\\packages\\balareva.easydatatable.activities/3.0.1\\lib/BalaReva.EasyDataTable.Design.dll",
-        "C:\\Users\\rhari\\.nuget\\packages\\balareva.easydatatable.activities/3.0.1\\lib/BalaReva.EasyDataTable.dll"
+        "C:\\Users\\rhari\\.nuget\\packages\\balareva.datatable.activities/3.0.1\\lib/DataTableExtensions.Activities.dll",
+        "C:\\Users\\rhari\\.nuget\\packages\\balareva.datatable.activities/3.0.1\\lib/DataTableGroup.Design.dll"
       ],
-      "Path": "C:\\Users\\rhari\\.nuget\\packages\\balareva.easydatatable.activities\\3.0.1"
+      "Path": "C:\\Users\\rhari\\.nuget\\packages\\balareva.datatable.activities\\3.0.1"
     }
   ],
   "Conflicts": [],
   "ResolvedDependencies": {
+    "BalaReva.DataTable.Activities": {
+      "Id": "BalaReva.DataTable.Activities",
+      "Version": "3.0.1",
+      "Dependencies": []
+    },
     "BalaReva.EasyDataTable.Activities": {
       "Id": "BalaReva.EasyDataTable.Activities",
       "Version": "3.0.1",
@@ -1365,6 +1381,17 @@
     }
   },
   "AllPackages": [
+    {
+      "Package": {
+        "Id": "BalaReva.DataTable.Activities",
+        "Version": "3.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\rhari\\.nuget\\packages\\balareva.datatable.activities\\3.0.1\\lib\\DataTableExtensions.Activities.dll",
+        "C:\\Users\\rhari\\.nuget\\packages\\balareva.datatable.activities\\3.0.1\\lib\\DataTableGroup.Design.dll"
+      ],
+      "Path": "C:\\Users\\rhari\\.nuget\\packages\\balareva.datatable.activities\\3.0.1"
+    },
     {
       "Package": {
         "Id": "BalaReva.EasyDataTable.Activities",

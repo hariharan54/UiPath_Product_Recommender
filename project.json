@@ -3,6 +3,7 @@
   "description": "product recommendation",
   "main": "Main.xaml",
   "dependencies": {
+    "BalaReva.DataTable.Activities": "[3.0.1]",
     "BalaReva.EasyDataTable.Activities": "[3.0.1]",
     "UiPath.Excel.Activities": "[2.11.4]",
     "UiPath.Mail.Activities": "[1.12.3]",

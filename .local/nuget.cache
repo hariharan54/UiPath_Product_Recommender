@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "hmfgxMxJQd26QONtoPS5TaD/RMbX4DX8pk8BQeCkmBGfBjv2qf+YBMrPll6icr1/4T0WiFMod/5PrMGeHvIKjA==",
+  "dgSpecHash": "3eQdBhA1wg/AAsm/N0G/X0A0aU5YxY07nwlFb/bTEZ81YILBKpAqDtqyTalTjyJFhBpkiEg0SdaX6gipZ6qwCQ==",
   "success": true,
   "projectFilePath": "E:\\rpa projects\\product recommendation\\.local\\",
   "expectedPackageFiles": [
+    "C:\\Users\\rhari\\.nuget\\packages\\balareva.datatable.activities\\3.0.1\\balareva.datatable.activities.3.0.1.nupkg.sha512",
     "C:\\Users\\rhari\\.nuget\\packages\\balareva.easydatatable.activities\\3.0.1\\balareva.easydatatable.activities.3.0.1.nupkg.sha512",
     "C:\\Users\\rhari\\.nuget\\packages\\closedxml\\0.87.1\\closedxml.0.87.1.nupkg.sha512",
     "C:\\Users\\rhari\\.nuget\\packages\\csvhelper\\16.0.0\\csvhelper.16.0.0.nupkg.sha512",

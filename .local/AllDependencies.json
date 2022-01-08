@@ -2,6 +2,16 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.6.1": {
+      "BalaReva.DataTable.Activities/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/_._": {}
+        },
+        "runtime": {
+          "lib/DataTableExtensions.Activities.dll": {},
+          "lib/DataTableGroup.Design.dll": {}
+        }
+      },
       "BalaReva.EasyDataTable.Activities/3.0.1": {
         "type": "package",
         "compile": {
@@ -2042,6 +2052,16 @@
       }
     },
     ".NETFramework,Version=v4.6.1/win10-x64": {
+      "BalaReva.DataTable.Activities/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/_._": {}
+        },
+        "runtime": {
+          "lib/DataTableExtensions.Activities.dll": {},
+          "lib/DataTableGroup.Design.dll": {}
+        }
+      },
       "BalaReva.EasyDataTable.Activities/3.0.1": {
         "type": "package",
         "compile": {
@@ -4068,6 +4088,19 @@
     }
   },
   "libraries": {
+    "BalaReva.DataTable.Activities/3.0.1": {
+      "sha512": "uwXuL1JUzLOa/5uMk0xxvQMRjQV2+zFQl9EkfW6okRNxPRWg72K/zPYKKH9p4D1yl/YBoyzHqOXT8eiZcZU4aQ==",
+      "type": "package",
+      "path": "balareva.datatable.activities/3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "balareva.datatable.activities.3.0.1.nupkg.sha512",
+        "balareva.datatable.activities.nuspec",
+        "lib/DataTableExtensions.Activities.dll",
+        "lib/DataTableGroup.Design.dll"
+      ]
+    },
     "BalaReva.EasyDataTable.Activities/3.0.1": {
       "sha512": "Ab4NdOBwLGZ9qdlPR62cPANV2QD2odf2fQ+F6CH3z+JhFjYk44Jj4xj1TYLJUhEpmMUvKq4lr6Y7LS0/vvgsig==",
       "type": "package",
@@ -7590,6 +7623,7 @@
   "projectFileDependencyGroups": {
     "": [],
     ".NETFramework,Version=v4.6.1": [
+      "BalaReva.DataTable.Activities >= 3.0.1 <= 3.0.1",
       "BalaReva.EasyDataTable.Activities >= 3.0.1 <= 3.0.1",
       "UiPath.Excel.Activities >= 2.11.4 <= 2.11.4",
       "UiPath.Mail.Activities >= 1.12.3 <= 1.12.3",
@@ -7611,6 +7645,11 @@
     "frameworks": {
       "net461": {
         "dependencies": {
+          "BalaReva.DataTable.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[3.0.1, 3.0.1]"
+          },
           "BalaReva.EasyDataTable.Activities": {
             "include": "Runtime",
             "target": "Package",
