@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>550,2383</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>628,2445</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>condtn_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="33">
@@ -78,9 +78,10 @@
       <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
       <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="condtn" sap:VirtualizedContainerService.HintSize="549,2318" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="condtn" sap:VirtualizedContainerService.HintSize="549,2380" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="outputdata" />
       <Variable x:TypeArguments="sd:DataTable" Name="DTclone" />
@@ -293,6 +294,7 @@
         </ActivityAction>
       </ui:ForEachRow.Body>
     </ui:ForEachRow>
-    <be:ColumnDataTypeConvertor ColumnIndex="{x:Null}" NullValue="{x:Null}" ColumnDataType="x:Decimal" ColumnName="[{&quot;rating&quot;,&quot;price&quot;,&quot;discount&quot;,&quot;no_of_ratings&quot;}]" DisplayName="Change Column DataType" sap:VirtualizedContainerService.HintSize="507,22" sap2010:WorkflowViewState.IdRef="ColumnDataTypeConvertor_1" InDataTable="[DTclone]" OutDataTable="[dtOut]" />
+    <be:ShowDataTable AllowColumnWordWrap="False" DisplayName="Show DataTable" sap:VirtualizedContainerService.HintSize="507,22" sap2010:WorkflowViewState.IdRef="ShowDataTable_1" InputDataTable="[DTclone]" Title="Datatable View" />
+    <be:ColumnDataTypeConvertor ColumnIndex="{x:Null}" ColumnDataType="x:Decimal" ColumnName="[{&quot;rating&quot;,&quot;price&quot;,&quot;discount&quot;,&quot;no_of_ratings&quot;}]" DisplayName="Change Column DataType" sap:VirtualizedContainerService.HintSize="507,22" sap2010:WorkflowViewState.IdRef="ColumnDataTypeConvertor_1" InDataTable="[DTclone]" NullValue="[Convert.ToDecimal(&quot;0&quot;)]" OutDataTable="[dtOut]" />
   </Sequence>
 </Activity>
